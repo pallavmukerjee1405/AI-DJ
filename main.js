@@ -38,6 +38,15 @@ function gotPoses(results){
 
 function draw(){
     image(video,0,0,600,500);
+
+    fill('#FF0000');
+    stroke('#FF0000');
+    circle(leftWristX,leftWristY,20);
+    InNumberleftWristY=Number(leftWristY);
+    remove_decimals=floor(InNumberleftWristY);
+    leftWristY_divide_1000=remove_decimals/1000;
+    volume=leftWristY_divide_1000*2;
+    
 }
 
 function play(){
